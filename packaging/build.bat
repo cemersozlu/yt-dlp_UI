@@ -7,7 +7,7 @@ python -m pip install pyinstaller
 
 echo.
 echo Building exe...
-python -m PyInstaller --noconfirm --clean --windowed --onefile --name "yt-dlp-ui" ^
+python -m PyInstaller --noconfirm --clean --windowed --onefile --name "yt-dlp_UI" ^
   --distpath "dist" --workpath "build\pyinstaller" --specpath "packaging" ^
   --icon "..\web\assets\icon.ico" ^
   --add-data "..\web;web" ^
@@ -20,8 +20,8 @@ python -m PyInstaller --noconfirm --clean --windowed --onefile --name "yt-dlp-ui
   app\main.py
 
 echo.
-if exist "dist\yt-dlp-ui.exe" (
-  echo OK: dist\yt-dlp-ui.exe
+if exist "dist\yt-dlp_UI.exe" (
+  echo OK: dist\yt-dlp_UI.exe
 ) else (
   echo ERROR: exe was not created.
 )

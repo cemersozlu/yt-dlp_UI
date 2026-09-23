@@ -7,3 +7,4 @@ yt-dlp.exe
 yt-dlp.exe.tmp
 venv/
 .venv/
+packaging/*.spec

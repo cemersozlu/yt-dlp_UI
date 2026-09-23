@@ -16,7 +16,7 @@ Vibe coded, lightweight, native-feeling desktop GUI for [yt-dlp](https://github.
 
 ## Download
 
-Grab the latest build from the [Releases](../../releases) page and run `yt-dlp-ui.exe`. No installer, no admin rights required.
+Grab the latest build from the [Releases](../../releases) page and run `yt-dlp_UI.exe`. No installer, no admin rights required.
 
 ## Screenshots
 
@@ -40,7 +40,7 @@ cd packaging
 build.bat
 ```
 
-The output binary is written to `dist\yt-dlp-ui.exe`.
+The output binary is written to `dist\yt-dlp_UI.exe`.
 
 ## Project structure
 
@@ -56,7 +56,7 @@ yt-dlp_UI/
 │   └── assets/
 ├── packaging/           # PyInstaller build config
 │   ├── build.bat
-│   └── yt-dlp-ui.spec
+│   └── yt-dlp_UI.spec
 ├── start.bat
 └── requirements.txt
 ```
