@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yt-dlp UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <main>
+      <div class="source">
+        <div class="source__audio-checkbox">
+          <label class="checkbox">
+            <span>Download audio only (MP3)</span>
+            <input type="checkbox" id="audioOnly">
+          </label>
+        </div>
+
+        <div class="source__input">
+          <label for="url" class="sr-only">Video URL</label>
+          <input type="text" id="url" placeholder="https://..." autocomplete="off">
+          <div class="paste-button__container">
+            <button type="button" class="btn-paste" onclick="pasteUrl()" aria-label="Paste from clipboard">
+              <img src="assets/paste-icon.svg" alt="" class="paste-icon">
+            </button>
+          </div>
+          <div class="download-button__container">
+            <button type="button" class="btn-download" id="downloadBtn" onclick="startDownload()" aria-label="Download">
+              <img src="assets/arrow-down.svg" alt="" class="arrow-down">
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Download progress">
+          <div class="progress-fill" id="progressFill"></div>
+          <p class="pct" id="pct">0%</p>
+        </div>
+      </div>
+
+      <div class="destination">
+        <label for="folder" class="sr-only">Save folder</label>
+        <input type="text" id="folder" value="">
+      </div>
+
+      <div class="log-container">
+        <div class="log-header">
+          What's goin' on
+          <div id="liveStatus" class="live-status" role="status" aria-live="polite" aria-atomic="true"></div>
+        </div>
+        <pre id="log" aria-live="polite" aria-atomic="false"></pre>
+      </div>
+    </main>
+    <footer>
+      <p> v0.1 </p>
+      <span>
+        <p class="version">yt-dlp</p>
+        <p class="version" id="version">version info...</p>
+        <button type="button" id="updateBtn" class="btn-update" onclick="updateYtdlp()">Update yt-dlp</button>
+      </span>
+    </footer>
+  </div>
+
+  <div class="debug-bar" id="debugBar">
+    <button type="button" onclick="debugProgress(0)">0%</button>
+    <button type="button" onclick="debugProgress(25)">25%</button>
+    <button type="button" onclick="debugProgress(63.7)">63.7%</button>
+    <button type="button" onclick="debugProgress(100)">100%</button>
+    <button type="button" onclick="debugStatus('Starting...')">status: starting</button>
+    <button type="button" onclick="setLiveProgress('Downloading 42.5%  1.23MiB/s  ETA 00:07')">status: downloading</button>
+    <button type="button" onclick="debugStatus('processing...')">status: processing</button>
+    <button type="button" onclick="debugStatus('Done')">status: done</button>
+    <button type="button" onclick="debugStatus('Error', 'err')">status: error</button>
+    <button type="button" onclick="debugStatus('Connection error', 'err')">status: conn error</button>
+    <button type="button" onclick="debugLog('Error: sample failure message', 'err')">log: err</button>
+    <button type="button" onclick="debugLog('> https://youtu.be/sample')">log: plain</button>
+    <button type="button" onclick="debugToggleDisabled()">toggle btn disabled</button>
+    <button type="button" onclick="debugClearLog()">clear log</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

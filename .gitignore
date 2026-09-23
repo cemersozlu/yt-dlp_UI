@@ -1,0 +1,9 @@
+resources/
+dist/
+build/
+__pycache__/
+*.pyc
+yt-dlp.exe
+yt-dlp.exe.tmp
+venv/
+.venv/

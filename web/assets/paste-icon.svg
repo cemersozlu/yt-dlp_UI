@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:affinity="https://www.affinity.studio/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="Artboard1" transform="matrix(1.103448,0,0,0.842105,-3.310345,-1.684211)">
+        <rect x="3" y="2" width="29" height="38" style="fill:none;"/>
+        <g transform="matrix(0.90625,0,0,1.1875,3,2)">
+            <path d="M24,29L12,29C10.354,29 9,27.646 9,26L9,10C9,8.354 10.354,7 12,7L24,7C25.646,7 27,8.354 27,10L27,26C27,27.646 25.646,29 24,29ZM12,9C11.451,9 11,9.451 11,10L11,26C11,26.549 11.451,27 12,27L24,27C24.549,27 25,26.549 25,26L25,10C25,9.451 24.549,9 24,9L12,9Z" style="fill:white;fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.90625,0,0,1.1875,3,2)">
+            <path d="M10,25L8,25C6.354,25 5,23.646 5,22L5,6C5,4.354 6.354,3 8,3L20,3C21.646,3 23,4.354 23,6L23,8C23,8.549 22.549,9 22,9C21.451,9 21,8.549 21,8L21,6C21,5.451 20.549,5 20,5L8,5C7.451,5 7,5.451 7,6L7,22C7,22.549 7.451,23 8,23L10,23C10.549,23 11,23.451 11,24C11,24.549 10.549,25 10,25Z" style="fill:white;fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.90625,0,0,1.1875,3,5.5625)">
+            <path d="M22,14L14,14C13.451,14 13,13.549 13,13C13,12.451 13.451,12 14,12L22,12C22.549,12 23,12.451 23,13C23,13.549 22.549,14 22,14Z" style="fill:white;fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.90625,0,0,1.1875,3,0.8125)">
+            <path d="M18,22L14,22C13.451,22 13,21.549 13,21C13,20.451 13.451,20 14,20L18,20C18.549,20 19,20.451 19,21C19,21.549 18.549,22 18,22Z" style="fill:white;fill-rule:nonzero;"/>
+        </g>
+    </g>
+</svg>
