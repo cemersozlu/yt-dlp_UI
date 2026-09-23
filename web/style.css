@@ -73,10 +73,15 @@ body {
         font-size: 1rem;
         outline: none;
         transition: border-color 0.15s;
-        flex: 1;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
         &:focus {
           border-color: var(--primary);
         }     
+      }
+      #url{
+        padding-inline-end: 5.5rem;
       }
       .source {
         position: relative;
