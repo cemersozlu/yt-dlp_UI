@@ -27,8 +27,8 @@ Grab the latest build from the [Releases](../../releases) page and run `yt-dlp-u
 Requires Python 3.10+ on Windows.
 
 ```bat
-git clone https://github.com/<your-username>/yt-dlp-ui.git
-cd yt-dlp-ui
+git clone https://github.com/cemersozlu/yt-dlp_UI.git
+cd yt-dlp_UI
 pip install -r requirements.txt
 start.bat
 ```
@@ -45,7 +45,7 @@ The output binary is written to `dist\yt-dlp-ui.exe`.
 ## Project structure
 
 ```
-yt-dlp-ui/
+yt-dlp_UI/
 ├── app/                # Python backend (Flask + pywebview)
 │   ├── main.py
 │   └── server.py
